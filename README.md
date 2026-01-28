@@ -1,5 +1,5 @@
 # UART
-<p>UART (Universal Asynchronous Receiver Transmitter) Verilog 2001 and VHDL 200X (2003) modules for FPGA. HW setup for <a href="../sr2cb/c10lp/README.md">Intel&reg; Cyclone&reg; 10 LP Evaluation Kit</a>, <a href="../sr2cb/ecp5/README.md">Lattice Semiconductor&reg; ECP5&#8482; Development Board</a> and Digilent Xilinx&reg; Spartan-3 Starter Kit Board.</p>
+<p>UART (Universal Asynchronous Receiver Transmitter) Verilog 2001 and VHDL 200X (2003) modules for FPGA. HW setup for <a href="https://github.com/krynentechnology/sr2cb/c10lp/README.md">Intel&reg; Cyclone&reg; 10 LP Evaluation Kit</a>, <a href="https://github.com/krynentechnology/sr2cb/ecp5/README.md">Lattice Semiconductor&reg; ECP5&#8482; Development Board</a> and Digilent Xilinx&reg; Spartan-3 Starter Kit Board.</p>
 
 <img src="xc3s/xc3s200_starter_kit.jpg" width=800>
 
