@@ -14,8 +14,8 @@
 -- along with this program. If not, see <https://www.gnu.org/licenses/> for a
 -- copy.
 --
--- License: LGPL, v3, as defined and found on www.gnu.org,
---          https://www.gnu.org/licenses/lgpl-3.0.html
+-- License: GPL, v3, as defined and found on www.gnu.org,
+--          https://www.gnu.org/licenses/gpl-3.0.html
 --
 --  Description: UART HW setup for Digilent Xilinx Spartan-3 Starter Kit
 --               (XC3S200-4FT256) and Xilinx ISE 14.7. E.g. ISE 14.7 does
@@ -77,9 +77,6 @@ signal uart1_tx_dr : std_logic;
 signal uart2_rx_d : std_logic_vector(7 downto 0);
 signal uart2_rx_dv : std_logic;
 signal parity2_ok : std_logic;
-signal uart2_tx_d : std_logic_vector(7 downto 0);
-signal uart2_tx_dv : std_logic;
-signal uart2_tx_dr : std_logic;
 
 signal uart_io_rx_d : unsigned(7 downto 0);
 signal uart_io_rx_d_i : std_logic_vector(7 downto 0);
@@ -229,9 +226,9 @@ uart2 : uart
         uart_rx_d => uart2_rx_d,
         uart_rx_dv => uart2_rx_dv,
         parity_ok => parity2_ok,
-        uart_tx_d => uart2_tx_d,
-        uart_tx_dv => uart2_tx_dv,
-        uart_tx_dr => uart2_tx_dr,
+        uart_tx_d => uart1_rx_d,
+        uart_tx_dv => uart1_rx_dv,
+        uart_tx_dr => open,
         uart_rx => UART_RX,
         uart_tx => UART_TX
     );
